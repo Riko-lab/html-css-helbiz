@@ -1,0 +1,346 @@
+body {
+  font-family: Open Sans,Segoe UI,Tahoma,sans-serif;
+  font-size: 12px;
+}
+
+[class^="col-offset"] {
+  height: 1vw;
+}
+[class^="col-"] {
+  position: relative;
+}
+/* top nav */
+
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #FFFFFF;
+}
+
+.container-nav {
+  line-height: 50px;
+}
+.container-nav img {
+  vertical-align: middle;
+}
+
+
+/* position 'ul' inside 'nav' */
+nav ul {
+  float: right;
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+}
+/* margin and padding for 'a' and 'li' inside 'nav' */
+/* first ul in nav */
+nav ul:first-child li:first-child a {
+  padding-left: 2vw;
+  padding-right: 1vw;
+}
+nav ul:first-child li:nth-child(n + 2) a {
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+nav ul:first-child li:nth-child(-n + 2) a {
+  border-right: 1px solid black;
+}
+/* second ul in nav */
+nav ul:nth-child(2) li:nth-child(n+2) {
+  margin-left: 2vw;
+}
+
+/* general rule for links inside nav */
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* end top nav */
+
+
+/* First section */
+
+.fs-section {
+  position: relative;
+  margin-top: 50px;
+}
+#jumbotron {
+  width: 100%;
+  height: auto;
+}
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  width: 70%;
+  text-align: center;
+  color: #FFFFFF;
+}
+.title h1 {
+  font-size: 3.5em;
+}
+.title p {
+  font-size: 1.2em;
+  padding: 2vw 0 1vw;
+}
+
+/* End first section */
+
+
+/* Start second section */
+
+.snd-section {
+  max-width: 1300px;
+  margin: 2vw auto 2vw;
+  text-align: center;
+}
+.box-gray {
+  padding: 20px;
+  margin: 0 1vw;
+  background-color: #FAFAFA;
+}
+.snd-section [class*="col-"] img {
+  display: block;
+  width: 40%;
+  margin: 2vw auto 0;
+}
+.snd-section [class*="col-"] h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+.snd-section [class*="col-"] p {
+  font-size: 2em;
+  margin: 2vw 0;
+  font-weight: 400;
+}
+.snd-section [class*="col-"] a {
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* End second section */
+
+
+/* Start third section */
+
+.trd-section {
+  position: relative;
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.trd-section img {
+  display: block;
+  margin: 0 auto;
+  width: 25vw;
+  padding-top: 18%;
+}
+.trd-section p {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+.caption-left {
+  margin-top: 40vw;
+  margin-left: 15vw;
+}
+.caption-right {
+  margin-top: 40vw;
+}
+
+/* End third section */
+
+
+/* Start fourth section */
+
+.fourth-section {
+  width: 90%;
+  margin: 0 auto;
+  background-image: url(../img/ScooterHelbiz-2400.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.fourth-section .col-lg-3 {
+  padding: 10vw 0 6vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+.fourth-section .col-lg-3 h1 {
+  font-size: 3em;
+}
+.fourth-section .col-lg-3 p {
+  margin: 2vw 0;
+  font-size: 1.7em;
+}
+.fourth-section .col-lg-3 a {
+  font-size: 1.5em;
+  color: white;
+  text-decoration: none;
+}
+
+/* End fourth section */
+
+
+/* Start fifth section */
+.fifth-section {
+  width: 90%;
+  margin: 2vw auto;
+  color: white;
+  text-align: center;
+}
+.fifth-section h1 {
+  padding-top: 2vw;
+  font-size: 2.3em;
+  font-weight: 600;
+}
+.fifth-section p {
+  margin: 2vw 0;
+  font-size: 1.4em;
+  font-weight: 600;
+}
+.fifth-section a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.box-blue {
+  height: 30vw;
+  margin-right: 1vw;
+  background-color: #285869;
+  background-image: url(../img/HelbiZAPP.png);
+  background-size: 100% auto;
+  background-position: center 1500%;
+  background-repeat: no-repeat;
+}
+.box-img {
+  height: 30vw;
+  margin-left: 1vw;
+  background-image: url(../img/Cities-1500.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+.fifth-section .col-lg-6:first-child img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+/* End fifth section */
+
+
+/* Start sixth section */
+
+.sixth-section {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background-image: url(../img/Social-Banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 2vw;
+}
+.family {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 30%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+}
+.social {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.social h1 {
+  font-size: 2em;
+  margin-bottom: 0.5vw;
+}
+.social a:nth-child(-n + 4) i{
+  margin-right: 1.5vw;
+}
+
+.sixth-section .social span {
+  color: black;
+}
+/* End sixth section */
+
+/* Start seventh Section */
+
+.seventh-section {
+  background-color: black;
+  color: white;
+}
+.contacts-container {
+  position: relative;
+  width: 65%;
+  margin: 0 auto;
+}
+.seventh-section .contacts-container{
+  padding-top: 5vw;
+}
+.seventh-section .container-fluid {
+    border-bottom: 1px solid #AAAAAA;
+}
+.contacts-container #first {
+  padding-bottom: 2vw;
+}
+.contacts-container img {
+  width: 50%;
+}
+.seventh-section h2 {
+  font-size: 1em;
+  margin: 1vw 0 1.5vw;
+}
+.seventh-section ul {
+  list-style: none;
+}
+.seventh-section ul li {
+  margin-bottom: 1vw;
+}
+.seventh-section a {
+  text-decoration: none;
+  color: #AAAAAA;
+}
+.seventh-section a:hover {
+  text-decoration: underline;
+}
+.social-contacts {
+  line-height: 6vw;
+  vertical-align: middle;
+}
+.seventh-section span {
+  color: white;
+  vertical-align: middle;
+}
+.seventh-section .social-contacts .col-lg-3:first-child span:nth-child(-n + 4) {
+  display: inline-block;
+  margin-right: 1vw;
+}
+.seventh-section .social-contacts  a {
+  color: white;
+}
+.apps {
+  line-height: 5vw;
+  text-align: center;
+}
+.apps img {
+  width: 10%;
+  vertical-align: middle;
+}
+/* End seventh Section */
