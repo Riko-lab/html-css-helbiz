@@ -1,6 +1,6 @@
 body {
   font-family: Open Sans,Segoe UI,Tahoma,sans-serif;
-  font-size: 12px;
+  font-size: 13px;
 }
 
 [class^="col-offset"] {
@@ -9,8 +9,9 @@ body {
 [class^="col-"] {
   position: relative;
 }
-/* top nav */
 
+
+/* Start header */
 
 .fixed {
   position: fixed;
@@ -19,12 +20,13 @@ body {
   z-index: 1000;
   background-color: #FFFFFF;
 }
-
+/* top nav */
 .container-nav {
   line-height: 50px;
 }
 .container-nav img {
   vertical-align: middle;
+  margin-left: 1vw;
 }
 
 
@@ -32,6 +34,9 @@ body {
 nav ul {
   float: right;
   list-style: none;
+}
+.display-hamburger {
+  display: none;
 }
 nav ul li {
   display: inline-block;
@@ -46,7 +51,7 @@ nav ul:first-child li:nth-child(n + 2) a {
   padding-left: 1vw;
   padding-right: 1vw;
 }
-nav ul:first-child li:nth-child(-n + 2) a {
+nav ul:first-child li:nth-child(-n + 3) a {
   border-right: 1px solid black;
 }
 /* second ul in nav */
@@ -65,7 +70,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* end top nav */
+/* End header */
 
 
 /* First section */
@@ -120,7 +125,7 @@ nav ul li a:hover {
   font-weight: 600;
 }
 .snd-section [class*="col-"] p {
-  font-size: 2em;
+  font-size: 1.9em;
   margin: 2vw 0;
   font-weight: 400;
 }
@@ -145,7 +150,7 @@ nav ul li a:hover {
   display: block;
   margin: 0 auto;
   width: 25vw;
-  padding-top: 18%;
+  padding-top: 12vw;
 }
 .trd-section p {
   font-size: 1.2em;
@@ -166,25 +171,27 @@ nav ul li a:hover {
 
 .fourth-section {
   width: 90%;
-  margin: 0 auto;
+  height: 35vw;
+  margin: 2vw auto 0;
   background-image: url(../img/ScooterHelbiz-2400.jpg);
   background-size: 100% auto;
   background-repeat: no-repeat;
+
 }
 .fourth-section .col-lg-3 {
-  padding: 10vw 0 6vw;
   text-align: center;
-  color: #FFFFFF;
+  color: white;
+  padding: 7vw 2vw;
 }
 .fourth-section .col-lg-3 h1 {
-  font-size: 3em;
+  font-size: 2.1vw;
 }
 .fourth-section .col-lg-3 p {
   margin: 2vw 0;
-  font-size: 1.7em;
+  font-size: 1.5vw;
 }
 .fourth-section .col-lg-3 a {
-  font-size: 1.5em;
+  font-size: 1.6vw;
   color: white;
   text-decoration: none;
 }
@@ -220,7 +227,7 @@ nav ul li a:hover {
   background-color: #285869;
   background-image: url(../img/HelbiZAPP.png);
   background-size: 100% auto;
-  background-position: center 1500%;
+  background-position: 0px 150px;
   background-repeat: no-repeat;
 }
 .box-img {
@@ -280,9 +287,9 @@ nav ul li a:hover {
 }
 /* End sixth section */
 
-/* Start seventh Section */
+/* Start footer Section */
 
-.seventh-section {
+.footer-section {
   background-color: black;
   color: white;
 }
@@ -291,10 +298,10 @@ nav ul li a:hover {
   width: 65%;
   margin: 0 auto;
 }
-.seventh-section .contacts-container{
+.footer-section .contacts-container{
   padding-top: 5vw;
 }
-.seventh-section .container-fluid {
+.footer-section .container-fluid {
     border-bottom: 1px solid #AAAAAA;
 }
 .contacts-container #first {
@@ -303,36 +310,36 @@ nav ul li a:hover {
 .contacts-container img {
   width: 50%;
 }
-.seventh-section h2 {
+.footer-section h2 {
   font-size: 1em;
   margin: 1vw 0 1.5vw;
 }
-.seventh-section ul {
+.footer-section ul {
   list-style: none;
 }
-.seventh-section ul li {
+.footer-section ul li {
   margin-bottom: 1vw;
 }
-.seventh-section a {
+.footer-section a {
   text-decoration: none;
   color: #AAAAAA;
 }
-.seventh-section a:hover {
+.footer-section a:hover {
   text-decoration: underline;
 }
 .social-contacts {
   line-height: 6vw;
   vertical-align: middle;
 }
-.seventh-section span {
+.footer-section span {
   color: white;
   vertical-align: middle;
 }
-.seventh-section .social-contacts .col-lg-3:first-child span:nth-child(-n + 4) {
+.footer-section .social-contacts .col-lg-3:first-child span:nth-child(-n + 4) {
   display: inline-block;
   margin-right: 1vw;
 }
-.seventh-section .social-contacts  a {
+.footer-section .social-contacts  a {
   color: white;
 }
 .apps {
@@ -340,7 +347,230 @@ nav ul li a:hover {
   text-align: center;
 }
 .apps img {
-  width: 10%;
+  width: 15%;
   vertical-align: middle;
 }
-/* End seventh Section */
+/* End footer Section */
+
+
+@media screen and (max-width: 992px) and (min-width: 769px) {
+  body {
+    font-size: 10px;
+  }
+  .display-md-none {
+    display: none;
+  }
+  /* top nav */
+  .display-hamburger {
+    display: block;
+    margin-right: 3vw;
+  }
+  .display-hamburger i {
+    vertical-align: middle;
+  }
+
+  /* third section */
+  .trd-section {
+    background-image: url(../img/HelbizBanner.jpg);
+    background-size: auto 50%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+  }
+  .trd-section img {
+    width: 60%;
+    padding-top: 20vw;
+  }
+
+  /* fifth section */
+
+  .box-blue {
+    background-position: 0px 120px;
+  }
+
+  /* footer */
+  .contacts-container img {
+    width: 60%;
+  }
+  .contacts-container a {
+    font-size: 1.3em;
+  }
+  .footer-section h2 {
+    font-size: 1.4em;
+    margin: 1vw 0 1.5vw;
+  }
+  .apps img {
+    width: 20%;
+    vertical-align: middle;
+  }
+
+  .social-contacts {
+    text-align: center;
+    margin: 2vw 0;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  body {
+    font-size: 2.7vw;
+  }
+  .display-xs-none {
+    display: none;
+  }
+  /* top nav */
+  .display-hamburger {
+    display: block;
+    margin-right: 3vw;
+  }
+  .display-hamburger i {
+    vertical-align: middle;
+  }
+  .container-nav {
+    line-height: 40px;
+  }
+
+  /* First section */
+  .fs-section {
+    position: relative;
+    margin-top: 40px;
+  }
+  #jumbotron {
+    width: 100%;
+    height: 80vw;
+    object-fit: cover;
+  }
+  .fs-section img {
+    width: 20%;
+    height: auto;
+  }
+  .title {
+    width: 100%;
+  }
+  .title h1 {
+    font-size: 2em;
+  }
+  .title p {
+    font-size: 1.3em;
+  }
+
+  /* Second section */
+
+  .snd-section .col-xs-12 {
+    margin-bottom: 3vw;
+  }
+
+
+  /* Third section */
+  .trd-section {
+    background-image: url(../img/HelbizBanner.jpg);
+    background-size: auto 50%;
+    background-position: 0% 0%;
+    background-repeat: no-repeat;
+  }
+  .trd-section img {
+    width: 60%;
+    padding-top: 20vw;
+  }
+
+  /* Fourth Section */
+  .fourth-section {
+    height: 50vw;
+    background-size: auto 100%;
+    background-position: cover;
+  }
+  .fourth-section .col-lg-3 h1 {
+    font-size: 4vw;
+  }
+  .fourth-section .col-lg-3 p {
+    font-size: 3vw;
+  }
+  .fourth-section .col-lg-3 a {
+    display: block;
+    font-size: 3.2vw;
+    margin-top: 5vw;
+  }
+
+  /* Start fifth section */
+  .fifth-section {
+    width: 90%;
+    margin: 2vw auto;
+    color: white;
+    text-align: center;
+  }
+
+  .box-blue {
+    height: 50vw;
+    margin: 0 0 3vw 0;
+    background-position: 0px -200%;
+  }
+  .box-img {
+    height: 50vw;
+    margin: 0;
+  }
+  .fifth-section .col-lg-6:first-child img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Sixth section */
+
+  .family {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 70%;
+    transform: translate(-50%, -50%);
+  }
+  .social h1 {
+    font-size: 3em;
+    margin-bottom: 3vw;
+  }
+  .social a:nth-child(-n + 4) i{
+    margin-right: 4vw;
+  }
+
+
+  /* footer */
+  .contacts-container {
+    width: 80%;
+    text-align: center;
+  }
+  .footer-section .contacts-container{
+    padding-top: 5vw;
+  }
+  .footer-section .container-fluid {
+      border-bottom: none;
+  }
+  .contacts-container #first {
+    padding-bottom: 4vw;
+    border-bottom: 1px solid #AAAAAA;
+  }
+  .contacts-container #first img {
+    display: block;
+    width: 30%;
+    margin: 0 auto 4vw;
+    padding-bottom: 3vw;
+    border-bottom: 1px solid #AAAAAA;
+  }
+  .footer-section ul li {
+    margin-bottom: 2vw;
+  }
+  .social-contacts {
+    line-height: 6vw;
+    vertical-align: middle;
+  }
+  .social-contacts .col-xs-12 {
+    margin: 3vw 0 2vw;
+  }
+  .footer-section .social-contacts .col-lg-3:first-child span:nth-child(-n + 4) {
+    display: inline-block;
+    margin-right: 1vw;
+  }
+  .apps {
+    line-height: 15vw;
+  }
+  .apps img {
+    width: 30%;
+  }
+  /* End footer Section */
+
+}
