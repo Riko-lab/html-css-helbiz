@@ -1,6 +1,6 @@
 # Helbiz
 
-I tried to copy the Helbiz.com Homepage.
+Helbiz.com Homepage clone.
 
 ## Technologies
 
